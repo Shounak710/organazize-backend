@@ -28,13 +28,56 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "bullet"
+  gem "database_cleaner-active_record"
+  gem "faker"
+  gem "factory_bot_rails"
+  gem "get_process_mem"
+  gem "rspec_api_documentation"
+  gem "rspec-rails", "~> 5.0.0"
+  gem "rspec_junit_formatter"
+  gem "rubocop", require: false
+  gem "sql_queries_count"
 end
 
 group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem "annotate"
+end
+
+group :test do
+  gem "shoulda-matchers"
+  gem "simplecov", require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "aasm"
+gem "acts_as_list"
+gem "active_model_serializers", "~> 0.10.12"
+gem "caxlsx"
+gem "devise"
+gem "devise-i18n"
+gem "devise_token_auth"
+gem "httparty"
+gem "jwt"
+gem "kaminari"
+gem "libreconv"
+gem "rails-i18n", "~> 7.0", ">= 7.0.3"
+gem "rails_best_practices"
+gem "rorvswild"
+gem "recaptcha"
+gem "redis"
+gem "rqrcode"
+gem "rubyzip"
+gem "tod"
+gem "validates_timeliness", "~> 6.0.0.alpha1"
+gem "virtus"
+gem "whenever", require: false
+gem "wicked_pdf"
+gem "wkhtmltopdf-binary"
+gem "zip-zip"
+gem "aws-sdk-ses"
+gem "strong_migrations"
